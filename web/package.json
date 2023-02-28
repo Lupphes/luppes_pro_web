@@ -1,0 +1,51 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "eslintConfig": {
+    "extends": "@haaxor1689/eslint-config"
+  },
+  "prettier": "@haaxor1689/prettier-config",
+  "dependencies": {
+    "next": "^13.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.58.3",
+    "zod": "^3.20.6"
+  },
+  "devDependencies": {
+    "@haaxor1689/eslint-config": "^2.0.4",
+    "@haaxor1689/prettier-config": "^2.0.2",
+    "@types/eslint": "^8.21.1",
+    "@types/node": "^18.14.0",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.35.0",
+    "eslint-config-next": "^13.2.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "postcss": "^8.4.14",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.0",
+    "typescript": "^4.9.5"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.5.8"
+  }
+}
