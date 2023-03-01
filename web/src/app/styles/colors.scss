@@ -1,5 +1,22 @@
 // colors.scss
 
-h1 {
-    color: rebeccapurple;
+$colors: (
+	purple: #151035,
+	white: #dedbd6,
+	yellow: #eace19,
+	green: #45ccb4,
+	black: #161616
+);
+
+@each $name, $color in $colors {
+	.cus-font-color-#{$name} {
+		color: $color;
+	}
+	.cus-background-#{$name} {
+		background-color: $color;
+	}
+}
+
+@mixin cus-color($name) {
+	@extend .cus-font-color-#{$name};
 }
