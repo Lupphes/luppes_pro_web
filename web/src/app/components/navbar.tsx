@@ -53,13 +53,13 @@ const Navbar = () => {
 						</button>
 					</div>
 					<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-						<div className="hidden sm:ml-6 sm:block">
+						<div className="hidden sm:block">
 							<div className="flex space-x-4">
 								{links.map((link, index) => (
 									<div key={index}>
 										<a
 											href={link.url}
-											className="font-ubuntu cus-font-color-green rounded-md px-3 py-2 text-xl font-bold"
+											className="font-ubuntu cus-font-color-green rounded-md py-2 pr-5 text-xl font-bold"
 											aria-current="page"
 										>
 											{link.name}
