@@ -1,7 +1,6 @@
 'use client';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGear } from '@fortawesome/free-solid-svg-icons';
 import {
 	faGithub,
 	faLinkedinIn,
@@ -11,11 +10,11 @@ import {
 const Footer = () => {
 	const nervi = '';
 	return (
-		<footer className="cus-background-black cus-font-color-white mt-2">
-			<div className="container mx-auto grid grid-cols-1 py-8 px-4">
+		<footer className="background-black color-white mt-2">
+			<div className="container mx-auto grid max-w-7xl grid-cols-1 py-10 px-2 md:px-6 lg:px-8">
 				<div className="grid grid-cols-2">
 					<div className="grid">
-						<div className="cus-font-color-green grid grid-cols-1 items-center gap-2">
+						<div className="color-green grid grid-cols-1 items-center gap-2">
 							<a
 								href="https://github.com/Lupphes"
 								className="inline-flex items-center"
@@ -40,7 +39,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className="relative grid">
-						<span className="font-ubuntu cus-font-color-white m-0 mt-auto text-right ">
+						<span className="font-ubuntu color-white m-0 mt-auto text-right">
 							Lupphes 2023
 						</span>
 					</div>
