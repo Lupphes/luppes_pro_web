@@ -1,6 +1,5 @@
 const wolfStyle = {
 	'hljs': {
-		overflowX: 'auto',
 		background: 'none',
 		color: '#dedbd6'
 	},

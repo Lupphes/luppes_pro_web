@@ -2,13 +2,13 @@
 import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
 import xml from 'react-syntax-highlighter/dist/esm/languages/hljs/xml';
 
-import wolf_style from '@/app/styles/wolf.style';
+import wolfStyle from '@/app/styles/wolf.style';
 
 const Wolf = () => {
 	SyntaxHighlighter.registerLanguage('xml', xml);
 	return (
 		<div className="mx-auto">
-			<SyntaxHighlighter language="xml" style={wolf_style}>
+			<SyntaxHighlighter language="xml" style={wolfStyle}>
 				{`
                          <li
                          fe><la

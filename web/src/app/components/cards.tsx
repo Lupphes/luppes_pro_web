@@ -8,21 +8,24 @@ const projects = [
 		group: 'MUNI',
 		year: 22,
 		image_path: '/pokemon.png',
-		image_alt: 'Pokemon website'
+		image_alt: 'Pokémon website',
+		url: 'https://visualization.lupp.es/'
 	},
 	{
 		name: 'Website Competition',
 		group: 'CEMACH',
 		year: 17,
 		image_path: '/israel.png',
-		image_alt: 'Israel website'
+		image_alt: 'Israel website',
+		url: 'https://israel.lupp.es/'
 	},
 	{
 		name: 'Pokémon Types & Stats',
 		group: 'MUNI',
 		year: 22,
 		image_path: '/pokemon.png',
-		image_alt: 'Pokemon website'
+		image_alt: 'Pokémon website',
+		url: 'https://visualization.lupp.es/'
 	}
 ];
 
@@ -33,7 +36,7 @@ const Cards = () => (
         [&>*:nth-child(odd)]:mr-8 [&>*:nth-child(odd)]:px-8 [&>*:nth-child(odd)]:sm:mr-0"
 	>
 		{projects.map((element, index) => (
-			<div className="background-gray py-4" key={index}>
+			<a href={element.url} key={index} className="background-gray py-4">
 				<span className="text-base font-medium">
 					<span className="font-semibold">{element.name}</span> ·{' '}
 					<span className="italic">{element.group}</span> ·{' '}
@@ -46,7 +49,7 @@ const Cards = () => (
 					width={1920}
 					height={1080}
 				/>
-			</div>
+			</a>
 		))}
 	</div>
 );
