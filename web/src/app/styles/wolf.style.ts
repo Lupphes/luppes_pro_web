@@ -1,156 +1,115 @@
 const wolfStyle = {
-	'code[class*="language-"]': {
-		color: '#c5c8c6',
-		textShadow: '0 1px rgba(0, 0, 0, 0.3)',
-		fontFamily:
-			"Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-		direction: 'ltr',
-		textAlign: 'left',
-		whiteSpace: 'pre',
-		wordSpacing: 'normal',
-		wordBreak: 'normal',
-		lineHeight: '1.3',
-		MozTabSize: '4',
-		OTabSize: '4',
-		tabSize: '4',
-		WebkitHyphens: 'none',
-		MozHyphens: 'none',
-		msHyphens: 'none',
-		hyphens: 'none'
+	'hljs': {
+		overflowX: 'auto',
+		background: 'none',
+		color: '#dedbd6'
 	},
-	'pre[class*="language-"]': {
-		color: '#c5c8c6',
-		textShadow: '0 1px rgba(0, 0, 0, 0.3)',
-		fontFamily:
-			"Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-		direction: 'ltr',
-		textAlign: 'left',
-		whiteSpace: 'pre',
-		wordSpacing: 'normal',
-		wordBreak: 'normal',
-		lineHeight: '1.3',
-		MozTabSize: '4',
-		OTabSize: '4',
-		tabSize: '4',
-		WebkitHyphens: 'none',
-		MozHyphens: 'none',
-		msHyphens: 'none',
-		hyphens: 'none',
-		padding: '1em',
-		margin: '.5em 0',
-		overflow: 'auto',
-		borderRadius: '0.3em',
-		background: '#161616'
+	'hljs-tag': {
+		color: '#45ccb4'
 	},
-	':not(pre) > code[class*="language-"]': {
-		background: '#161616',
-		padding: '.1em',
-		borderRadius: '.3em'
+	'hljs-subst': {
+		color: '#dedbd6'
 	},
-	'comment': {
-		color: '#7C7C7C'
-	},
-	'prolog': {
-		color: '#7C7C7C'
-	},
-	'doctype': {
-		color: '#7C7C7C'
-	},
-	'cdata': {
-		color: '#7C7C7C'
-	},
-	'punctuation': {
-		color: '#c5c8c6'
-	},
-	'.namespace': {
-		Opacity: '.7'
-	},
-	'property': {
-		color: '#96CBFE'
-	},
-	'keyword': {
-		color: '#96CBFE'
-	},
-	'tag': {
-		color: '#96CBFE'
-	},
-	'class-name': {
-		color: '#FFFFB6',
-		textDecoration: 'underline'
-	},
-	'boolean': {
-		color: '#99CC99'
-	},
-	'constant': {
-		color: '#99CC99'
-	},
-	'symbol': {
-		color: '#f92672'
-	},
-	'deleted': {
-		color: '#f92672'
-	},
-	'number': {
-		color: '#FF73FD'
-	},
-	'selector': {
-		color: '#A8FF60'
-	},
-	'attr-name': {
-		color: '#A8FF60'
-	},
-	'string': {
-		color: '#A8FF60'
-	},
-	'char': {
-		color: '#A8FF60'
-	},
-	'builtin': {
-		color: '#A8FF60'
-	},
-	'inserted': {
-		color: '#A8FF60'
-	},
-	'variable': {
-		color: '#C6C5FE'
-	},
-	'operator': {
-		color: '#EDEDED'
-	},
-	'entity': {
-		color: '#FFFFB6',
-		cursor: 'help'
-	},
-	'url': {
-		color: '#96CBFE'
-	},
-	'.language-css .token.string': {
-		color: '#87C38A'
-	},
-	'.style .token.string': {
-		color: '#87C38A'
-	},
-	'atrule': {
-		color: '#F9EE98'
-	},
-	'attr-value': {
-		color: '#F9EE98'
-	},
-	'function': {
-		color: '#DAD085'
-	},
-	'regex': {
-		color: '#E9C062'
-	},
-	'important': {
-		color: '#fd971f',
+	'hljs-strong': {
+		color: '#a8a8a2',
 		fontWeight: 'bold'
 	},
-	'bold': {
-		fontWeight: 'bold'
-	},
-	'italic': {
+	'hljs-emphasis': {
+		color: '#a8a8a2',
 		fontStyle: 'italic'
+	},
+	'hljs-bullet': {
+		color: '#ae81ff'
+	},
+	'hljs-quote': {
+		color: '#ae81ff'
+	},
+	'hljs-number': {
+		color: '#ae81ff'
+	},
+	'hljs-regexp': {
+		color: '#ae81ff'
+	},
+	'hljs-literal': {
+		color: '#ae81ff'
+	},
+	'hljs-link': {
+		color: '#ae81ff'
+	},
+	'hljs-code': {
+		color: '#a6e22e'
+	},
+	'hljs-title': {
+		color: '#a6e22e'
+	},
+	'hljs-section': {
+		color: '#a6e22e'
+	},
+	'hljs-selector-class': {
+		color: '#a6e22e'
+	},
+	'hljs-keyword': {
+		color: '#eace19'
+	},
+	'hljs-selector-tag': {
+		color: '#eace19'
+	},
+	'hljs-name': {
+		color: '#eace19'
+	},
+	'hljs-attr': {
+		color: '#eace19'
+	},
+	'hljs-symbol': {
+		color: '#66d9ef'
+	},
+	'hljs-attribute': {
+		color: '#66d9ef'
+	},
+	'hljs-params': {
+		color: '#dedbd6'
+	},
+	'hljs-class .hljs-title': {
+		color: '#dedbd6'
+	},
+	'hljs-string': {
+		color: '#A61DBB'
+	},
+	'hljs-type': {
+		color: '#A61DBB'
+	},
+	'hljs-built_in': {
+		color: '#A61DBB'
+	},
+	'hljs-builtin-name': {
+		color: '#A61DBB'
+	},
+	'hljs-selector-id': {
+		color: '#A61DBB'
+	},
+	'hljs-selector-attr': {
+		color: '#A61DBB'
+	},
+	'hljs-selector-pseudo': {
+		color: '#A61DBB'
+	},
+	'hljs-addition': {
+		color: '#A61DBB'
+	},
+	'hljs-variable': {
+		color: '#A61DBB'
+	},
+	'hljs-template-variable': {
+		color: '#A61DBB'
+	},
+	'hljs-comment': {
+		color: '#75715e'
+	},
+	'hljs-deletion': {
+		color: '#75715e'
+	},
+	'hljs-meta': {
+		color: '#75715e'
 	}
 };
 

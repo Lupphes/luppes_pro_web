@@ -1,12 +1,14 @@
 'use client';
+import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
+import xml from 'react-syntax-highlighter/dist/esm/languages/hljs/xml';
 
-import SyntaxHighlighter from 'react-syntax-highlighter';
 import wolf_style from '@/app/styles/wolf.style';
 
-const Wolf = () => (
-	<pre className="mx-auto">
-		<code className="">
-			<SyntaxHighlighter language="javascript" style={wolf_style}>
+const Wolf = () => {
+	SyntaxHighlighter.registerLanguage('xml', xml);
+	return (
+		<div className="mx-auto">
+			<SyntaxHighlighter language="xml" style={wolf_style}>
 				{`
                          <li
                          fe><la
@@ -31,8 +33,8 @@ const Wolf = () => (
                "true"><CCNA2/><IELTS/><LPI_Lin
                ux/></certificate></life>`}
 			</SyntaxHighlighter>
-		</code>
-	</pre>
-);
+		</div>
+	);
+};
 
 export default Wolf;

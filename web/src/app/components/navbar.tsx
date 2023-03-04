@@ -32,7 +32,7 @@ const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<nav className={`background-purple w-full ${navbar ? 'fixed' : 'unset'}`}>
+		<nav className="background-purple w-full">
 			<div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 				<div className="relative z-50 flex h-16 items-center justify-between text-xl">
 					<div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -67,7 +67,7 @@ const Navbar = () => {
 						</div>
 					</div>
 					<div className="font-ubuntu color-green absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 ">
-						<span>Ondřej&nbsp;Sloup</span>
+						<span>Ondřej_Sloup</span>
 					</div>
 				</div>
 			</div>
@@ -92,10 +92,18 @@ const Navbar = () => {
 						))}
 					</div>
 					<div className="color-green mt-16 grid grid-cols-4 items-center gap-4">
-						<FontAwesomeIcon icon={faGithub} className="fa-2xl" />
-						<FontAwesomeIcon icon={faLinkedinIn} className="fa-2xl" />
-						<FontAwesomeIcon icon={faTelegram} className="fa-2xl" />
-						<FontAwesomeIcon icon={faGear} className="fa-2xl" />
+						<a href="https://github.com/Lupphes/">
+							<FontAwesomeIcon icon={faGithub} className="fa-2xl" />
+						</a>
+						<a href="https://www.linkedin.com/in/osloup/">
+							<FontAwesomeIcon icon={faLinkedinIn} className="fa-2xl" />
+						</a>
+						<a href="https://t.me/Luppes">
+							<FontAwesomeIcon icon={faTelegram} className="fa-2xl" />
+						</a>
+						<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+							<FontAwesomeIcon icon={faGear} className="fa-2xl" />
+						</a>
 					</div>
 				</div>
 			</div>

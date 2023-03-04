@@ -1,8 +1,6 @@
 import '@/app/styles/globals.scss';
 import '@/app/styles/tailwind.scss';
 
-import '@/app/styles/globals.css';
-
 import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
 
